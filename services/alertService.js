@@ -1,3 +1,5 @@
+import { theme } from "../theme/theme.js";
+
 export const getNextPeriodAlert = (markedDates) => {
   const today = new Date();
   let nearest = null;
@@ -8,7 +10,7 @@ export const getNextPeriodAlert = (markedDates) => {
     if (
       diffDays >= 0 &&
       diffDays <= 3 &&
-      markedDates[dateStr].dotColor === "blue"
+      markedDates[dateStr].dotColor === theme.colors.predict
     ) {
       if (!nearest || diffDays < nearest.daysLeft) {
         nearest = {
