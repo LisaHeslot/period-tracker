@@ -13,14 +13,16 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kinthoa.periodtracker"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/transparent-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.kinthoa.periodtracker"
     },
     "web": {
       "favicon": "./assets/icon.png"
