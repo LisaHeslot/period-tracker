@@ -19,8 +19,6 @@ export const styles = StyleSheet.create({
     left: 3,
     width: 32,
     height: 32,
-    width: "100%",
-    height: "100%",
     backgroundColor: theme.colors.shadow,
   },
   container: {

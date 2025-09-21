@@ -9,14 +9,16 @@ import {
 } from "date-fns";
 import { ChevronLeft, ChevronRight, Settings } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 
+import Icon from "../assets/transparent-icon.png";
 import Legend from "../components/Legend";
 import { toggleDay } from "../managers/cycleManager";
 import { updateSettings } from "../managers/cycleManager";
 import { getNextPeriodAlert } from "../services/alertService";
 import { loadData } from "../services/storage";
 import { styles } from "../theme/calendarTheme";
+import { theme } from "../theme/theme";
 import SettingsModal from "./SettingsModal";
 
 export default function CalendarView() {
@@ -99,7 +101,14 @@ export default function CalendarView() {
             </View>
           </View>
           <View style={styles.menu}>
-            <Text style={styles.title}>Period Tracker</Text>
+            <View style={styles.legendRow}>
+              <Image
+                source={Icon}
+                style={{ height: 32, width: 32, margin: 6 }}
+                resizeMode="contain"
+              />
+              <Text style={styles.title}>Period Tracker</Text>
+            </View>
             <View>
               <View style={styles.buttonShadow}></View>
               <TouchableOpacity

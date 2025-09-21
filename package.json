@@ -1,6 +1,7 @@
 {
   "name": "period-tracker",
   "version": "1.0.0",
+  "author": "Heslot Lisa",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
